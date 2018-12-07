@@ -9,3 +9,14 @@
   <a href='https://github.com/M4cs/Athena/license'><img src='https://img.shields.io/github/license/M4cs/Athena.svg'></a>
 </p>
 
+# Getting Started:
+
+#### On Windows:
+
+Athena only works to create packages on Windows at the moment. Until I can find a way to get WSL/CygWin to work with the program, it will remain this way. To run on windows simply download the Windows release in the releases tab and run the program.
+
+Make sure to put Athena in a folder by itself.
+
+#### On Mac/Linux:
+
+Download the correct binary for your system. Run `chmod +x athena` inside the directory of Athena. After that run `./athena` and the program will start. **You must have Theos installed and working correctly prior**
