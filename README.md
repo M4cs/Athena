@@ -7,6 +7,8 @@
   <img src='https://img.shields.io/badge/version-1.0.0-ff69b5.svg'>
   <a href='https://github.com/M4cs/Athena/forks'><img src='https://img.shields.io/github/forks/M4cs/Athena.svg'></a>
   <a href='https://github.com/M4cs/Athena/license'><img src='https://img.shields.io/github/license/M4cs/Athena.svg'></a>
+  </br><img src='https://i.imgur.com/eGC61LZ.png'></br><b>Main Screen</b>
+  </br><img src='https://i.imgur.com/kbmZyw9.png'></br><b>New Package Creator Screen</b>
 </p>
 
 # Getting Started:
