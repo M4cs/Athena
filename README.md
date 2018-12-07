@@ -12,6 +12,11 @@
 </p>
 
 
+# Included Files:
+
+- `athena-linux`: the linux binary for Athena
+- `athena-mac`: the mac binary for Athena
+- `athena.py`: Python file and program for Windows
 # Requirements:
 
 - Theos (obviously)
@@ -23,9 +28,9 @@
 
 #### On Windows:
 
-Athena only works to create packages on Windows at the moment. Until I can find a way to get WSL/CygWin to work with the program, it will remain this way. To run on windows simply download the Windows release in the releases tab and run the program.
+Download the `athena.py` file and put it in it's own directory. Download from pip: `PySide2`, `PyQt5`, and `PySimpleGUIQt`. CD into the Athena directory and run `python athena.py`. If any errors for importing modules comes up simple run `pip install <required module>`.
 
-Make sure to put Athena in a folder by itself.
+**Note:** Athena on Windows can only create packages at this time.
 
 #### On Mac/Linux:
 
