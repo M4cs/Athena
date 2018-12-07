@@ -1,4 +1,5 @@
 <p align='center'>
+  <img src='https://i.imgur.com/18Ai6wd.png'>
   <b>Athena | GUI For Theos Jailbreak Development Framework</b></br>
   <a href='https://twitter.com/maxbridgland'><b>Follow Me On Twitter</b></a></br>
   <a href='https://github.com/M4cs/Athena/stars'><img src='https://img.shields.io/github/stars/M4cs/Athena.svg'></a>
