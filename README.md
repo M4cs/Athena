@@ -22,7 +22,7 @@
 - Theos (obviously)
 - Linux or MacOS
 - Theos Environment Variables Setup Correctly
-- Possibly Python 3.6 and PyQt5/PySide2 and PySimpleGUIQt
+- Possibly Python 3.6 and PyQt5/PySide2 and PySimpleGUIQt for Windows
 
 # Getting Started:
 
