@@ -11,6 +11,14 @@
   </br><img src='https://i.imgur.com/kbmZyw9.png'></br><b>New Package Creator Screen</b>
 </p>
 
+
+# Requirements:
+
+- Theos (obviously)
+- Linux or MacOS
+- Theos Environment Variables Setup Correctly
+- Possibly Python 3.6 and PyQt5/PySide2 and PySimpleGUIQt
+
 # Getting Started:
 
 #### On Windows:
