@@ -109,7 +109,7 @@ def theosgui():
         [gui.Text('')],
         [gui.T('Tweak Compiler', font=('Arial', 13, 'bold'), justification='center')],
         [gui.T('Project Directory:', justification='left'), gui.InputText('C:\\Example\\Tweak\\Path', text_color=itcolor, size=(50,1), key='_TWEAKPATH_', justification='right'), gui.FolderBrowse()],
-        [gui.Checkbox('Install To Device (Required .bashrc setup)  ', text_color=itcolor, key='_INSTALL_', default=False), gui.Checkbox('Clean Directory/Theos Cache', text_color=itcolor, key='_CLEAN_', default=True)],
+        [gui.Checkbox('Install To Device (Required .bashrc setup)  ', text_color=itcolor, key='_INSTALL_', default=False), gui.Checkbox('Clean Directory/Theos Cache', text_color=itcolor, key='_CLEAN_', default=True), gui.Checkbox('Final Package Flag', text_color=itcolor, key='_FINAL_', default=True)],
         [gui.T('Theos Device IP (Enter Only If Using Install To Device): ', justification='left'), gui.InputText('', text_color=itcolor, size=(20,1), justification='center', key='_DEVIP_')],
         [gui.Button('Build')],
         [gui.Button('Exit'), gui.Button('Donate')]
@@ -144,7 +144,11 @@ def theosgui():
                 clean = 'clean'
             elif values['_CLEAN_'] == False:
                 clean = ''
-            query = "make %s package %s -C %s" % (clean, install, path)
+            if values['_FINAL_'] == True:
+                final = 'FINALPACKAGE=1'
+            elif values['_FINAL_'] == False:
+                final = ''
+            query = "make %s package %s -C %s %s" % (clean, install, path, final)
             buildwindow(path, query)
         elif event == 'Donate':
             webbrowser.open_new_tab('https://paypal.me/AuxilumDevelopment')
@@ -152,9 +156,8 @@ def theosgui():
 def buildwindow(path, query):
     os.system(query)
     layout = [
-        [gui.Button('Open Package Directory', key='_OPEN_')],
         [gui.Text('Info: It make take a few moments to run and build the program. Refer to your console if there are any errors they will show there.')],
-        [gui.Button('Close')]
+        [gui.Button('Open Package Directory', key='_OPEN_'), gui.Button('Close')]
     ]
     window = gui.Window('Build', no_titlebar=True, keep_on_top=True, grab_anywhere=True).Layout(layout)
     while True:
@@ -177,7 +180,7 @@ def createnewpkg(projectname, packagename, authname):
         [gui.Text('Description: ', justification='center'), gui.InputText('', size=(30, 1), key='_DESCRIPTION_', justification='center')],
         [gui.Text('Version: ', justification='center'), gui.InputText('1.0.0', size=(10, 1), key='_VERSION_', justification='center')],
         [gui.Text('Dependencies: ', justification='center')],
-        [gui.InputText('Ex: mobilesubstrate, libcolorpicker', size=(100, 1), justification='center', key='_DEPENDENCIES_')],
+        [gui.InputText('mobilesubstrate, libcolorpicker', size=(100, 1), justification='center', key='_DEPENDENCIES_')],
         [gui.Text('Filter: ', justification='center'), gui.InputText('com.apple.SpringBoard', size=(30, 1), key='_FILTER_', justification='center')],
         [gui.Text('Kill Process On Install: ', justification='center'), gui.InputText('SpringBoard', size=(30, 1), key='_KILLPROC_', justification='center')],
         [gui.Text('Folder To Build To', font=('Arial', 13, 'bold'), justification='center')],

@@ -4,13 +4,20 @@
   <a href='https://twitter.com/maxbridgland'><b>Follow Me On Twitter</b></a></br>
   <a href='https://github.com/M4cs/Athena/stars'><img src='https://img.shields.io/github/stars/M4cs/Athena.svg'></a>
   <a href='https://github.com/M4cs/Athena/issues'><img src='https://img.shields.io/github/issues/M4cs/Athena.svg'></a>
-  <img src='https://img.shields.io/badge/version-1.0.0-ff69b5.svg'>
+  <img src='https://img.shields.io/badge/version-1.0.1-ff69b5.svg'>
   <a href='https://github.com/M4cs/Athena/forks'><img src='https://img.shields.io/github/forks/M4cs/Athena.svg'></a>
   <a href='https://github.com/M4cs/Athena/license'><img src='https://img.shields.io/github/license/M4cs/Athena.svg'></a>
   </br><img src='https://i.imgur.com/eGC61LZ.png'></br><b>Main Screen</b>
   </br><img src='https://i.imgur.com/kbmZyw9.png'></br><b>New Package Creator Screen</b>
 </p>
 
+# Changelog:
+
+#### Update 1.0.1:
+
+    - Add Final Package Flag (Remove debug from deb file name)
+    - Fix UI Up
+    
 # Getting Started:
 
 #### On Windows:
