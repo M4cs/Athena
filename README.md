@@ -11,7 +11,6 @@
   </br><img src='https://i.imgur.com/kbmZyw9.png'></br><b>New Package Creator Screen</b>
 </p>
 
-<<<<<<< HEAD
 # Changelog:
 
 #### Update 1.0.1:
